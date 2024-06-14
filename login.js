@@ -22,3 +22,4 @@ function ResizeToPC(){
     document.querySelector('.wcorner').classList.remove('wcorner-mobile')
     Situation=true
 }
+Resized()
