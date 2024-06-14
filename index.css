@@ -1,0 +1,10 @@
+body {
+    background-color: #E3D6CE;
+}
+.img {
+    height: 40vw;
+    width: 40vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
