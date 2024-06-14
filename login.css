@@ -154,23 +154,21 @@ input {
     /* top: 170px; */
     top: 31.481vh;
 }
-@media only screen and (max-width:600px) {
-    .dlogin {
-        grid-template-columns: 1fr;
-        /* width: 300px; */
-        width: 55.55555vh;
-    }
-    .bcorner,.wcorner {
-        /* top: 220px; */
-        top: 40.7407vh;
-    }
-    .bcorner {
-        /* left: 20px; */
-        left: 3.7037vh;
-        /* left: 5.8823vw; */
-    }
-    .wcorner {
-        /* left: 220px; */
-        left: 40.7407vh;
-    }
+.dlogin-mobile {
+    grid-template-columns: 1fr;
+    /* width: 300px; */
+    width: 55.55555vh;
+}
+.bcorner-mobile,.wcorner-mobile {
+    /* top: 220px; */
+    top: 40.7407vh;
+}
+.bcorner-mobile {
+    /* left: 20px; */
+    left: 3.7037vh;
+    /* left: 5.8823vw; */
+}
+.wcorner-mobile {
+    /* left: 220px; */
+    left: 40.7407vh;
 }
