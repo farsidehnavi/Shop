@@ -140,6 +140,7 @@ body {
     font-size: 3.940886vw;
 }
 .bitem {
+    font-size: 3.2840721vw;
     background-color: #270003;
     color: white;
     border: none;
@@ -175,6 +176,7 @@ hr {
     border-radius: 1000px;
 }
 .sp {
+    font-size: 3.9408866vw;
     margin: 8vh 0 0 10vw;
 }
 .properties {
@@ -193,7 +195,7 @@ hr {
 }
 .i {
     place-self: center;
-    font-size: 3.940886vw;
+    font-size: 3.9408866vw;
 }
 .desiner {
     /* position: fixed;
