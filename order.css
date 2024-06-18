@@ -61,6 +61,7 @@ body {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
+    font-size: 3.284064vw;
     background-color: #270003;
     color: white;
     border-radius: 1000px;
@@ -136,6 +137,7 @@ body {
 .pitem {
     margin: 0;
     cursor: default;
+    font-size: 3.940886vw;
 }
 .bitem {
     background-color: #270003;
@@ -191,6 +193,7 @@ hr {
 }
 .i {
     place-self: center;
+    font-size: 3.940886vw;
 }
 .desiner {
     /* position: fixed;
