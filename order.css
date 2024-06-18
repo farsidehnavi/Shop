@@ -71,6 +71,7 @@ body {
     display: grid;
     grid-template-columns: 5vw 1fr;
     grid-column-gap: 3.5vw;
+    grid-column-gap: 5vw;
     transition: background-color 0.25s, color 0.25s, transform 0.5s;
     border: solid 0.2vw #270003;
 }
@@ -90,7 +91,7 @@ body {
     }
 }
 .related {
-    margin: 27vh 0 0 7.2vw;
+    margin: 27vh 0 0 5.8vw;
 }
 .chain,.irate {
     height: 4vh;
@@ -99,7 +100,7 @@ body {
     margin: auto;
 }
 .rate {
-    margin: 27vh 0 0 5vw;
+    margin: 27vh 0 0 4.5vw;
 }
 .diorder {
     /* overflow-x: scroll; */
