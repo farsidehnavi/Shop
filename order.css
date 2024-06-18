@@ -1,0 +1,203 @@
+body {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: #E3D6CE; */
+    background-color: white;
+}
+.img {
+    /* here */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(3px);
+    z-index: -2;
+}
+.order {
+    /* here */
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    bottom: 5vh;
+    left: 5vw;
+    border-radius: 5vw;
+    /* background-color: #fff8f4; */
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+.fixed {
+    position: fixed;
+    top: 5vh;
+}
+.scrollable {
+    overflow-y: scroll;
+    position: fixed;
+    top: 41vh;
+    bottom: 5vh;
+    left: 1.8vw;
+    right: 1.8vw;
+    padding-top: 2vh;
+}
+.scrollable::-webkit-scrollbar {
+    /* opacity: 1; */
+    width: 0;
+}
+.fp {
+    /* here */
+    position: fixed;
+    top: 15vh;
+    left: 20vw;
+    /* margin: 12vh 0 0 5vw; */
+    font-size: 5vw;
+    cursor: default;
+}
+.related-rate {
+    display: flex;
+}
+.related,.rate {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #270003;
+    color: white;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    padding: 0 3vw;
+    display: grid;
+    grid-template-columns: 5vw 1fr;
+    grid-column-gap: 3.5vw;
+    transition: background-color 0.25s, color 0.25s, transform 0.5s;
+    border: solid 0.2vw #270003;
+}
+.related:hover,.rate:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    transform: scale(1.1);
+}
+.related:hover {
+    .chain {
+        content: url('icons/2849800_chain_link_linked_multimedia_icon.png');
+    }
+}
+.rate:hover {
+    .irate {
+        content: url('icons/rate-black.png');
+    }
+}
+.related {
+    margin: 27vh 0 0 7.2vw;
+}
+.chain,.irate {
+    height: 4vh;
+    width: 4vh;
+    justify-self: center;
+    margin: auto;
+}
+.rate {
+    margin: 27vh 0 0 5vw;
+}
+.diorder {
+    /* overflow-x: scroll; */
+    /* height: 100px; */
+    /* width: 100px; */
+}
+.iorder {
+    /* here */
+    position: fixed;
+    width: 30vw;
+    height: 30vw;
+    object-fit: contain;
+    top: 10vh;
+    right: 10vw;
+    /* transform: rotate(180deg); */
+}
+.items {
+    display: grid;
+    grid-template-rows: 15vh;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-column-gap: 5vw;
+    grid-row-gap: 8vw;
+    /* margin: 43vh 0 0 5vw; */
+    margin-left: 5.8vw;
+}
+.item {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4vw;
+    padding: 2vw;
+    transition: background-color 0.25s, color 0.25s, transform 0.5s;
+    border: solid 0.2vw #270003;
+    height: 12.3vh;
+}
+.pitem {
+    margin: 0;
+    cursor: default;
+}
+.bitem {
+    background-color: #270003;
+    color: white;
+    border: none;
+    border-radius: 1000px;
+    /* margin: 2.5vh 0 0 4.5vw; */
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+    position: absolute;
+    top: 13.5vh;
+    left: 6vw;
+}
+.sitem {
+    font-size: 2.5vw;
+    cursor: default;
+}
+.item:hover {
+    background-color: #270003;
+    color: white;
+    transform: scale(1.1);
+    .bitem {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+}
+hr {
+    position: fixed;
+    left: 15vw;
+    right: 15vw;
+    border: none;
+    height: 0.2vh;
+    background-color: #270003;
+    margin: 2vh 0 0 0;
+    border-radius: 1000px;
+}
+.sp {
+    margin: 8vh 0 0 10vw;
+}
+.properties {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 10vh; */
+    grid-row-gap: 5vw;
+    margin: 5vw 5.8vw;
+}
+.property {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 0.2vw #270003;
+}
+.i {
+    place-self: center;
+}
+.desiner {
+    /* position: fixed;
+    left: 2vw;
+    bottom: 1vh; */
+    margin: 0 0 2vh 8vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: Arial;
+}
