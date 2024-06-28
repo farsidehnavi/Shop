@@ -1,0 +1,118 @@
+body {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    background-color: #E3D6CE;
+}
+.phones {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 80vh;
+    grid-column-gap: 2vw;
+    margin: 15vh;
+}
+.phone {
+    position: relative;
+    border-radius: 3vw;
+    background-color: rgb(50, 50, 50);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vh 23vw 5vw 1fr;
+    cursor: pointer;
+    color: white;
+    border: solid 1vh black;
+    transition: transform 0.25s, background-color 0.25s, color 0.25s;
+}
+img {
+    place-self: center;
+    /* margin: auto; */
+    height: 20vw;
+    width: 20vw;
+    object-fit: contain;
+}
+.notification-bar {
+    display: flex;
+    position: relative;
+}
+.order-name {
+    place-self: center;
+}
+hr {
+    position: absolute;
+    bottom: 2vh;
+    left: 8vw;
+    right: 8vw;
+    background-color: white;
+    transition: background-color 0.25s;
+    border: none;
+    height: 0.2vh;
+}
+.time {
+    margin-left: 2vw;
+    place-self: center;
+}
+.battery-percentage {
+    place-self: center;
+    position: absolute;
+    left: 19vw;
+}
+.ibattery {
+    height: 4vh;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 12vw;
+}
+.wifi {
+    position: absolute;
+    left: 8vw;
+    top: 0.8vh;
+    height: 3vh;
+}
+.phone:hover {
+    background-color: rgb(205, 205, 205);
+    color: black;
+    transform: scale(1.05);
+    hr {
+        background-color: black;
+    }
+    .ibattery {
+        content: url('icons/211628_battery_empty_icon.png');
+    }
+    .wifi {
+        content: url('icons/9035159_wifi_icon.png');
+    }
+}
+.time-off {
+    position: absolute;
+    top: 10vh;
+    left: 6.55vw;
+    font-size: 5vh;
+    display: none;
+}
+.date {
+    display: none;
+}
+.tf-off {
+    display: block;
+}
+.i-off {
+    display: none;
+}
+.dupper-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu-item {
+    padding: 0.5vw 2vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+}
+.menu-item:hover {
+    background-color: #fff8f4;
+}
+.dsearch {
+    border-bottom: solid 0.2vw black;
+}

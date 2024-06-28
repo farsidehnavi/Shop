@@ -1,16 +1,19 @@
-body {
-    background-color: #E3D6CE;
+.sign-up-body,.sign-in-body {
+    /* background-color: #E3D6CE; */
     font-size: 2.962962vh;
+    display: none;
 }
 .dlogin {
     /* border-radius: 40px; */
     border-radius: 7.407vh;
     position: fixed;
     /* top: 20px; */
-    top: 3.703vh;
+    /* top: 3.703vh; */
+    top: 24vh;
     /* left: 20px; */
-    left: 3.703vh;
+    /* left: 3.703vh; */
     /* left: 5.8823vw; */
+    left: 4.5vw;
     /* box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.5); */
     box-shadow: -1.111vh -1.111vh 1.851vh rgba(0, 0, 0, 0.5);
     display: grid;
@@ -62,7 +65,7 @@ input {
     cursor: pointer;
     /* height: 25px; */
     height: 4.629vh;
-    transition: background-color 0.5s,color 0.5s,transform 1s;
+    transition: background-color 0.3s,color 0.3s;
     font-size: 2.962962vh;
 }
 .submit:hover {
@@ -71,14 +74,17 @@ input {
     color: white;
 }
 .submit:active {
-    transform: rotate(360deg);
+    background-color: rgba(0, 0, 0, 0);
+    border: solid rgba(0, 0, 0, 0.284) 0.37vh;
+    color: black;
 }
 .fp {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
-    margin: 3.5px 0;
-    margin: 0.6481481vh 0;
+    /* margin: 3.5px 0; */
+    /* margin: 0.6481481vh 0; */
+    margin: 1.1vh;
     cursor: default;
 }
 .fd {
@@ -93,6 +99,7 @@ input {
     height: 3.7037vh;
     /* width: 20px; */
     width: 3.7037vh;
+    place-self: center;
 }
 .bback {
     /* height: 25px; */
@@ -107,6 +114,7 @@ input {
     border: none;
     cursor: pointer;
     transition: transform 0.5s,margin 0.5s;
+    display: grid;
 }
 .bback:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -137,7 +145,7 @@ input {
 .bcorner,.wcorner {
     position: fixed;
     /* left: 270px; */
-    left: 50vh;
+    left: 52vh;
     /* height: 100px; */
     height: 18.52vh;
     /* width: 100px; */
@@ -147,12 +155,14 @@ input {
 .bcorner {
     background-color: black;
     /* top: 20px; */
-    top: 3.703vh;
+    /* top: 3.703vh; */
+    top: 24vh;
 }
 .wcorner {
     background-color: #fff8f4;
     /* top: 170px; */
-    top: 31.481vh;
+    /* top: 31.481vh; */
+    top: 51.7763vh;
 }
 .dlogin-mobile {
     grid-template-columns: 1fr;
