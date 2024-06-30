@@ -52,7 +52,7 @@ function SubmitIn(){
             }
             else{
                 if(Accounts.some(a=>a.every((element,index)=>element==[String(document.querySelector('.user-in').value),String(document.querySelector('.pass-in').value)][index]))){
-                    alert('Done!')
+                    window.open('search.html',name='_parent')
                 }
                 else{
                     alert('Incorrect username or password !')

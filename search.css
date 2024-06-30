@@ -1,73 +1,100 @@
+html {
+    height: 100vh;
+}
 body {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
     user-select: none;
     background-color: #E3D6CE;
+    margin: 0;
+    /* position: fixed; */
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .phones {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 80vh;
     grid-column-gap: 2vw;
-    margin: 15vh;
+    grid-row-gap: 5vh;
+    padding: 6vh 2vh 0 2vh;
+    overflow-y: scroll;
+    /* height: 79vh; */
+    height: 85vh;
+    justify-content: space-around;
+    width: 95vw;
+}
+.phones::-webkit-scrollbar {
+    display: none;
+}
+.ephones {
+    height: 10vh;
 }
 .phone {
     position: relative;
-    border-radius: 3vw;
+    /* border-radius: 3vw; */
+    border-radius: 36.1895px;
     background-color: rgb(50, 50, 50);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5vh 23vw 5vw 1fr;
+    /* grid-template-rows: 5vh 23vw 5vw 1fr; */
+    grid-template-rows: 7% 50% 5% 1fr;
     cursor: pointer;
     color: white;
     border: solid 1vh black;
     transition: transform 0.25s, background-color 0.25s, color 0.25s;
+    height: 80vh;
 }
-img {
+.iphone {
     place-self: center;
     /* margin: auto; */
-    height: 20vw;
-    width: 20vw;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
+}
+.notification-bar-full {
+    display: grid;
+    grid-template-columns: 40% 1fr 31%;
 }
 .notification-bar {
     display: flex;
-    position: relative;
+    height: 40px;
+    width: 100%;
 }
 .order-name {
     place-self: center;
 }
 hr {
     position: absolute;
-    bottom: 2vh;
-    left: 8vw;
-    right: 8vw;
+    bottom: 2%;
+    left: 33%;
+    right: 33%;
     background-color: white;
     transition: background-color 0.25s;
     border: none;
-    height: 0.2vh;
+    height: 0.2%;
 }
 .time {
     margin-left: 2vw;
     place-self: center;
+    display: inline-block;
+    margin: 0;
+}
+.enotification-bar {
+    width: 100%;
 }
 .battery-percentage {
     place-self: center;
-    position: absolute;
-    left: 19vw;
 }
 .ibattery {
-    height: 4vh;
+    height: 60%;
     transform: rotate(270deg);
-    position: absolute;
-    left: 12vw;
+    place-self: center;
 }
 .wifi {
-    position: absolute;
-    left: 8vw;
-    top: 0.8vh;
-    height: 3vh;
+    height: 60%;
+    place-self: center;
 }
 .phone:hover {
     background-color: rgb(205, 205, 205);
@@ -85,8 +112,8 @@ hr {
 }
 .time-off {
     position: absolute;
-    top: 10vh;
-    left: 6.55vw;
+    top: 15%;
+    left: 27%;
     font-size: 5vh;
     display: none;
 }
@@ -101,18 +128,41 @@ hr {
 }
 .dupper-menu {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
+    float: right;
 }
 .menu-item {
-    padding: 0.5vw 2vw;
+    padding: 4vh;
     cursor: pointer;
     border-radius: 0.5vw;
+    display: flex;
 }
 .menu-item:hover {
-    background-color: #fff8f4;
+    background-color: rgba(255, 255, 255, 0.5);
 }
-.dsearch {
+.menu-item:active {
     border-bottom: solid 0.2vw black;
+}
+.imenu-item {
+    height: 3.2vh;
+    width: 3.2vh;
+    object-fit: contain;
+    /* place-self: center; */
+    margin-right: 1vw;
+}
+.pmenu-item {
+    margin: 0;
+}
+.plogo {
+    padding: 2vw;
+    display: inline-block;
+    margin: 0;
+}
+.menu-opened {
+    border-bottom: solid 0.2vw black;
+}
+.pmenu-item-onlyicon {
+    display: none;
+}
+.menu-item-onlyicon {
+    padding: 2vh;
 }
