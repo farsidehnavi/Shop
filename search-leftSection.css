@@ -1,7 +1,7 @@
-body {
-    font-family: "LXGW WenKai Mono TC", monospace;
-    font-weight: 400;
-    font-style: normal;
+.left-section {
+    height: 100vh;
+    width: 62.751159vh;
+    display: none;
 }
 .img {
     /* here */
@@ -9,19 +9,23 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
+    width: 62.751159vh;
     object-fit: cover;
-    filter: blur(0.73891625vw);
+    filter: blur(0.4636785vw);
     z-index: -2;
 }
 .order {
     /* here */
     position: fixed;
     top: 5vh;
-    right: 5vw;
+    /* right: 5vw; */
+    /* right: 72vw; */
     bottom: 5vh;
-    left: 5vw;
-    border-radius: 5vw;
+    /* left: 5vw; */
+    left: 3vh;
+    width: 56.751159vh;
+    border-radius: 3vh;
     /* background-color: #fff8f4; */
     background-color: rgba(255, 255, 255, 0.5);
     z-index: -1;
@@ -29,6 +33,7 @@ body {
 .fixed {
     position: fixed;
     top: 5vh;
+    width: 62.751159vh;
 }
 .scrollable {
     overflow-y: scroll;
@@ -36,41 +41,48 @@ body {
     top: 41vh;
     bottom: 5vh;
     left: 1.8vw;
-    right: 1.8vw;
+    width: 60.951159vh;
     padding-top: 2vh;
 }
 .scrollable::-webkit-scrollbar {
-    /* opacity: 1; */
-    width: 0;
+    display: none;
 }
-.fp {
+.dfp {
     /* here */
     position: fixed;
-    top: 15vh;
-    left: 20vw;
-    /* margin: 12vh 0 0 5vw; */
-    font-size: 5vw;
+    /* top: 15vh; */
+    top: 5vh;
+    /* left: 12.5vh; */
+    left: 5vh;
+    display: grid;
+    height: 27vh;
+    width: 35vh;
+}
+.fp {
+    font-size: 3.137vh;
     cursor: default;
+    place-self: center;
 }
 .related-rate {
     display: flex;
+    margin-left: 1.1vh;
 }
 .related,.rate {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 3.284064vw;
+    font-size: 2.0607vh;
     background-color: #270003;
     color: white;
     border-radius: 1000px;
     cursor: pointer;
-    padding: 0 3vw;
+    padding: 0 1.8825vh;
     display: grid;
-    grid-template-columns: 5vw 1fr;
-    grid-column-gap: 3.5vw;
-    grid-column-gap: 5vw;
+    grid-template-columns: 3.137vh 1fr;
+    grid-column-gap: 2.196vh;
+    grid-column-gap: 3.137vh;
     transition: background-color 0.25s, color 0.25s, transform 0.5s;
-    border: solid 0.2vw #270003;
+    border: solid 0.125vh #270003;
 }
 .related:hover,.rate:hover {
     background-color: rgba(255, 255, 255, 0.7);
@@ -88,7 +100,7 @@ body {
     }
 }
 .related {
-    margin: 27vh 0 0 5.8vw;
+    margin: 27vh 0 0 3.639vh;
 }
 .chain,.irate {
     height: 4vh;
@@ -97,7 +109,7 @@ body {
     margin: auto;
 }
 .rate {
-    margin: 27vh 0 0 4.5vw;
+    margin: 27vh 0 0 3vh;
 }
 .diorder {
     /* overflow-x: scroll; */
@@ -107,38 +119,38 @@ body {
 .iorder {
     /* here */
     position: fixed;
-    width: 30vw;
-    height: 30vw;
+    width: 18.825vh;
+    height: 18.825vh;
     object-fit: contain;
     top: 10vh;
-    right: 10vw;
+    left: 37vh;
     /* transform: rotate(180deg); */
 }
 .items {
     display: grid;
     grid-template-rows: 15vh;
-    grid-template-columns: 25vw 25vw 25vw;
-    grid-column-gap: 5vw;
-    grid-row-gap: 8vw;
+    grid-template-columns: 15.69vh 15.69vh 15.69vh;
+    grid-column-gap: 3.137vh;
+    grid-row-gap: 5.02vh;
     /* margin: 43vh 0 0 5vw; */
-    margin-left: 5.8vw;
+    margin-left: 1.4vh;
 }
 .item {
     position: relative;
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 4vw;
-    padding: 2vw;
+    border-radius: 2.51vh;
+    padding: 1.255vh;
     transition: background-color 0.25s, color 0.25s, transform 0.5s;
-    border: solid 0.2vw #270003;
+    border: solid 0.125vh #270003;
     height: 12.3vh;
 }
 .pitem {
     margin: 0;
     cursor: default;
-    font-size: 3.940886vw;
+    font-size: 2.473vh;
 }
 .bitem {
-    font-size: 3.926vw;
+    font-size: 2.4636vh;
     background-color: #270003;
     color: white;
     border: none;
@@ -148,11 +160,11 @@ body {
     transition: background-color 0.25s, color 0.25s;
     position: absolute;
     top: 13.5vh;
-    left: 5.9vw;
-    padding: 0.8vw 1.4vw;
+    left: 3.702vh;
+    padding: 0.502vh 0.879vh;
 }
 .sitem {
-    font-size: 2.5vw;
+    font-size: 1.569vh;
     cursor: default;
 }
 .item:hover {
@@ -164,10 +176,10 @@ body {
         color: black;
     }
 }
-hr {
+.left-hr {
     position: fixed;
-    left: 15vw;
-    right: 15vw;
+    left: 9.41267vh;
+    width: 43.925819vh;
     border: none;
     height: 0.2vh;
     background-color: #270003;
@@ -175,33 +187,30 @@ hr {
     border-radius: 1000px;
 }
 .sp {
-    font-size: 3.9408866vw;
-    margin: 8vh 0 0 10vw;
+    font-size: 2.473vh;
+    margin: 8vh 0 0 4vh;
 }
 .properties {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 10vh; */
-    grid-row-gap: 5vw;
-    margin: 5vw 5.8vw;
+    grid-row-gap: 3.137vh;
+    margin: 3.137vh 6.2vh 3.137vh 1.4vh;
 }
 .property {
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 5vw;
+    border-radius: 3.137vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: solid 0.2vw #270003;
+    border: solid 0.125vh #270003;
 }
 .i {
     place-self: center;
-    font-size: 3.9408866vw;
+    font-size: 2.473vh;
 }
 .desiner {
-    /* position: fixed;
-    left: 2vw;
-    bottom: 1vh; */
-    margin: 0 0 2vh 8vw;
-    font-size: 1.5vw;
+    margin: 0 0 2vh 3vh;
+    font-size: 0.94vh;
     font-weight: 600;
     font-family: Arial;
 }

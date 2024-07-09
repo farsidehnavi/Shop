@@ -1,5 +1,6 @@
 html {
     height: 100vh;
+    width: 100vw;
 }
 body {
     font-family: "LXGW WenKai Mono TC", monospace;
@@ -8,22 +9,33 @@ body {
     user-select: none;
     background-color: #E3D6CE;
     margin: 0;
-    /* position: fixed; */
+    position: fixed;
 }
 body::-webkit-scrollbar {
     display: none;
+}
+.right-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.right-section-leftSectionOpened {
+    left: 62.751159vh;
 }
 .phones {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
     grid-column-gap: 2vw;
     grid-row-gap: 5vh;
-    padding: 6vh 2vh 0 2vh;
+    padding: 6vh 2vh 10vh 2vh;
     overflow-y: scroll;
     /* height: 79vh; */
     height: 85vh;
     justify-content: space-around;
-    width: 95vw;
+    width: 95%;
+    margin-top: 1vh;
 }
 .phones::-webkit-scrollbar {
     display: none;
@@ -34,7 +46,8 @@ body::-webkit-scrollbar {
 .phone {
     position: relative;
     /* border-radius: 3vw; */
-    border-radius: 36.1895px;
+    /* border-radius: 36.1895px; */
+    border-radius: 6vh;
     background-color: rgb(50, 50, 50);
     display: grid;
     grid-template-columns: 1fr;
@@ -65,7 +78,9 @@ body::-webkit-scrollbar {
 .order-name {
     place-self: center;
 }
-hr {
+.right-hr {
+    background-color: red;
+    display: none;
     position: absolute;
     bottom: 2%;
     left: 33%;
@@ -104,10 +119,10 @@ hr {
         background-color: black;
     }
     .ibattery {
-        content: url('icons/211628_battery_empty_icon.png');
+        content: url('icons/battery/battery-black.svg');
     }
     .wifi {
-        content: url('icons/9035159_wifi_icon.png');
+        content: url('icons/wifi/wifi-black.svg');
     }
 }
 .time-off {
@@ -128,7 +143,9 @@ hr {
 }
 .dupper-menu {
     display: flex;
-    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 .menu-item {
     padding: 4vh;

@@ -1,10 +1,12 @@
 button {
-    font-size: 300px;
+    font-size: 180px;
+    display: block;
+    width: 500px;
 }
 p {
     margin-left: 400px;
 }
 img {
     height: 50px;
-    margin-left: 300px;
+    margin-left: 250px;
 }
